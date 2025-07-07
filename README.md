@@ -104,17 +104,10 @@ git clone https://github.com/yourusername/form-template-builder.git
 cd form-template-builder
 Install dependencies
 
-bash
-Copy
-Edit
+
 npm install
 Run the dev server
-
-bash
-Copy
-Edit
 npm start
-🎬 Demo Flow
 On HomePage:
 
 Click + Create New Template (max 5)
@@ -146,7 +139,7 @@ Click Delete → Remove template from localStorage
 
 💻 MERN, Redux, Next.js, PenTesting, ML Enthusiast
 
-📫 LinkedIn
+📫 LinkedIn (https://www.linkedin.com/in/nikhil-dubey-b4b471243/)
 
 📄 License
 This project is for frontend evaluation only.
