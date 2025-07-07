@@ -167,11 +167,43 @@ const GenerateFormPage = () => {
                         handleInputChange(field.id, e.target.value)
                       }
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-gray-700 focus:ring-2 focus:ring-blue-400"
+                      placeholder={field.helpText || ""}
                     >
                       <option>Select an option</option>
                       <option value="Option 1">Option 1</option>
                       <option value="Option 2">Option 2</option>
                     </select>
+                  )}
+
+                  {field.type === "alphanumeric" && (
+                    <input
+                      type="text"
+                      value={formData[field.id] || ""}
+                      onChange={(e) =>
+                        handleInputChange(field.id, e.target.value)
+                      }
+                      className={`w-full px-4 py-2 rounded-lg border ${
+                        invalidFields[field.id]
+                          ? "border-red-500 ring-2 ring-red-300"
+                          : "border-gray-300 focus:ring-2 focus:ring-blue-400"
+                      } outline-none`}
+                      placeholder={field.helpText || ""}
+                    />
+                  )}
+
+                  {field.type === "upload" && (
+                    <input
+                      type="file"
+                      onChange={(e) =>
+                        handleInputChange(field.id, e.target.files[0])
+                      }
+                      className={`w-full px-4 py-2 rounded-lg border ${
+                        invalidFields[field.id]
+                          ? "border-red-500 ring-2 ring-red-300"
+                          : "border-gray-300 focus:ring-2 focus:ring-blue-400"
+                      } outline-none`}
+                      placeholder={field.helpText || ""}
+                    />
                   )}
 
                   {field.type === "radio" && (

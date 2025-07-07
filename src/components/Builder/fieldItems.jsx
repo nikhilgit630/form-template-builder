@@ -32,7 +32,8 @@ const FieldItem = ({ field, sectionId }) => {
         >
           <option value="">Select Field Type</option>
           <option value="short_text">Text</option>
-          <option value="number">Number</option> 
+          <option value="number">Number</option>
+          <option value="alphanumeric">Alphanumeric</option>
           <option value="paragraph">Paragraph</option>
           <option value="dropdown">Dropdown</option>
           <option value="radio">Radio</option>

@@ -1,6 +1,7 @@
 export const FIELD_TYPES = [
   { type: "short_text", label: "Text" },
   { type: "number", label: "Number" },
+  { type: "alphanumeric", label: "Alphanumeric" },
   { type: "paragraph", label: "Paragraph" },
   { type: "dropdown", label: "Dropdown" },
   { type: "radio", label: "Radio" },

@@ -99,6 +99,32 @@ const PreviewPage = () => {
                     <option>{field.helpText || "Select option"}</option>
                   </select>
                 )}
+                {field.type === "radio" && (
+                  <div className="flex flex-col gap-2">
+                    {field.options.map((option) => (
+                      <label
+                        key={option}
+                        className="inline-flex items-center gap-2"
+                      >
+                        <input
+                          type="radio"
+                          name={field.id}
+                          disabled
+                          className="text-indigo-600 w-4 h-4"
+                        />
+                        <span className="text-gray-700">{option}</span>
+                      </label>
+                    ))}
+                  </div>
+                )}
+                {field.type === "alphanumeric" && (
+                  <input
+                    type="text"
+                    disabled
+                    placeholder={field.helpText}
+                    className="w-full bg-purple-50 text-gray-700 border border-purple-300 rounded-lg px-4 py-2 shadow-sm"
+                  />
+                )}
 
                 {field.type === "boolean" && (
                   <label className="inline-flex items-center gap-2">

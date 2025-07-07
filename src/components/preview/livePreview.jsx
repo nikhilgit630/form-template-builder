@@ -49,6 +49,13 @@ const LivePreview = ({ template }) => {
                   className="w-full border border-yellow-300 bg-yellow-50 px-3 py-2 rounded-md shadow-sm text-gray-800"
                 />
               )}
+              {field.type === "alphanumeric" && (
+                <input
+                  type="text"
+                  disabled  
+                  className="w-full border border-purple-300 bg-purple-50 px-3 py-2 rounded-md shadow-sm text-gray-800"
+                />
+              )}
 
               {field.type === "dropdown" && (
                 <select
