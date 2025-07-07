@@ -130,6 +130,9 @@ Click Preview → Read-only view
 
 Click Delete → Remove template from localStorage
 
+![Screenshot 2025-07-07 131104](https://github.com/user-attachments/assets/e28773fb-b87d-4a2e-8f28-d87bbeb1e6dd)
+
+
 
 
 🧑 Author
