@@ -149,7 +149,7 @@ Click Delete → Remove template from localStorage
 📫 LinkedIn
 
 📄 License
-This project is for frontend evaluation and academic showcase only.
+This project is for frontend evaluation only.
 © 2025 Nikhil Dubey – All Rights Reserved.
 
 yaml
